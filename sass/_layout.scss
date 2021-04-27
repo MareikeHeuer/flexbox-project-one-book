@@ -8,9 +8,14 @@
 }
 
 .header {
+  font-size: 1.4rem;
   height: 7rem;
   background-color: var(--color-white);
   border-bottom: var(--color-grey-light-2);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .content {
@@ -30,5 +35,5 @@
 
   flex: 1;
   // the element should grow as much as it can
-  // element should fill entire remaining width of container
+  // element should fill entire remaining width of content container
 }
