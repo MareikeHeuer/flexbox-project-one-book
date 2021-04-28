@@ -195,3 +195,46 @@
   text-align: center;
   padding: 2.5rem;
 }
+
+////////////////
+// GALLERY
+.gallery {
+  display: flex;
+  &__photo {
+    width: 100%; // always define eidth or height of img in % so the img stays fluid
+    display: block; // img should always be block or inline-block to avoid having white space underneath an image when left as inline element
+  }
+}
+
+////////////////
+// HOTEL OVERVIEW
+.overview {
+  display: flex;
+
+  &__heading {
+  }
+
+  &__stars {
+    // flex: 1;
+    margin-right: auto; // often used in flexbox to create space between element but not have that element take the entire width. Instead it is the automatically calculated margin.
+  }
+
+  &__icon-star,
+  &__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary);
+  }
+
+  &__location {
+  }
+
+  &__rating {
+  }
+
+  &__rating-average {
+  }
+
+  &__rating-count {
+  }
+}
