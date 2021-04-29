@@ -35,9 +35,6 @@
 }
 
 .hotel-view {
-  //test
-  height: 80rem;
-
   flex: 1;
   // the element should grow as much as it can
   // element should fill entire remaining width of content container
@@ -51,6 +48,7 @@
 }
 
 .description {
+  font-size: 1.4rem;
   background-color: var(--color-white);
   box-shadow: var(--shadow-light);
   padding: 3rem;
