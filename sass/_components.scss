@@ -406,15 +406,19 @@
     margin-right: 0.7rem;
 
     // approach for older browsers
-    // background-image: url(../img/chevron-thin-right.svg);
-    // background-size: cover;
+    // on older browses color will appear in black because its not changeable
+    background-image: url(../img/chevron-thin-right.svg);
+    background-size: cover;
 
     // Newer browsers - masks
     // Mask defines an area where we can look through the element and see what is behind
     // Use icon as the mask
-    background-color: var(--color-primary);
-    -webkit-mask-image: url(../img/chevron-thin-right.svg);
-    -webkit-mask-size: cover;
+    @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+      background-color: var(--color-primary);
+      -webkit-mask-image: url(../img/chevron-thin-right.svg);
+      -webkit-mask-size: cover;
+      background-image: none; // now will appear pink in chrome
+    }
   }
 }
 
